@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Home.css'; // Make sure to create this CSS file
 
 function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -85,7 +84,7 @@ function Home() {
           <div className={`hero-content mt-16 transition-all duration-1000 ease-out ${animateHero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight">
               Your Trusted Partner for{' '}
-              <span className="animate-text-color">Secure Verification</span>
+              <span className="animate-text-color-blue">Secure Verification</span>
             </h1>
             <p className="text-2xl md:text-3xl lg:text-4xl mb-8 font-light italic text-gray-200">
               Providing accurate and instant identity verification solutions tailored to your needs.
