@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import './Home.css'; // Make sure to create this CSS file
 
 function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -82,9 +83,14 @@ function Home() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className={`hero-content mt-16 transition-all duration-1000 ease-out ${animateHero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h1 className="text-4xl font-bold mb-4">Your Trusted Partner for Secure Verification</h1>
-            <p className="text-xl mb-8">Providing accurate and instant identity verification solutions tailored to your needs.</p>
-            <button className="bg-white text-primary-700 hover:bg-gray-200 font-bold py-2 px-4 rounded">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight">
+              Your Trusted Partner for{' '}
+              <span className="animate-text-color">Secure Verification</span>
+            </h1>
+            <p className="text-2xl md:text-3xl lg:text-4xl mb-8 font-light italic text-gray-200">
+              Providing accurate and instant identity verification solutions tailored to your needs.
+            </p>
+            <button className="bg-white text-primary-700 hover:bg-gray-200 font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">
               Get Started
             </button>
           </div>
