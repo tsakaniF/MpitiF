@@ -4,16 +4,18 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">VerifyNow</h3>
-            <p className="text-gray-400">Providing reliable verification services since 2024.</p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+<<<<<<< HEAD
             <p className="mb-2 text-gray-400"><strong className="text-white">Phone:</strong> +27 123 456 789</p>
-            <p className="mb-2 text-gray-400"><strong className="text-white">Email:</strong> <a href="mailto:info@letsverifynow.co.za" className="hover:text-blue-400 transition duration-300">info@letsverifynow.co.za</a></p>
-            <p className="mb-2 text-gray-400"><strong className="text-white">Address:</strong> 123 Verification Lane, Midrand, South Africa</p>
+            <p className="mb-2 text-gray-400"><strong className="text-white">Email:</strong> <a href="mailto: info@verifynow.co.za" className="hover:text-blue-400 transition duration-300"> info@funerals.co.za</a></p>
+            <p className="mb-2 text-gray-400"><strong className="text-white">Address:</strong> Thornhill Office Park, Vorna Valley , Midrand, Johannesburg, 1685</p>
+=======
+            <p className="mb-2 text-gray-400"><strong className="text-white">Phone:</strong> +27 82 746 7328</p>
+            <p className="mb-2 text-gray-400"><strong className="text-white">Email:</strong> <a href="mailto: info@verifynow.co.za" className="hover:text-blue-400 transition duration-300"> info@verifynow.co.za</a></p>
+            <p className="mb-2 text-gray-400"><strong className="text-white">Address:</strong> Thornhill Office Park, Vorna Valley, Midrand, Johannesburg, 1685</p>
+>>>>>>> 092d6124b5b664ca60acbf7b5dc835ff2b15663b
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -46,7 +48,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>&copy; 2023 VerifyNow. All rights reserved.</p>
+          <p>&copy; 2024 ourfuneral. All rights reserved.</p>
         </div>
       </div>
     </footer> 
