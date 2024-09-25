@@ -15,7 +15,7 @@ function BackgroundChecks() {
       title: "Credit Score/Consumer Profile",
       items: [
         "Transunion",
-        "XDS (Express credit score)",
+        "XDS (Express credit score)",   
         "Experian"
       ]
     }
