@@ -37,7 +37,7 @@ function Services() {
       icon: "globe-outline",
       title: "Bank Confirmation ",
       description: "Realtime Bank Account Verifications, 13 banks (ABSA, FNB, Standard Bank, Nedbank, African Bank, Capitec, Investec, Mercantile Bank, Sasfin Bank, Discovery Bank, Finbond Mutual Bank, Grindrod Bank, Tyme Bank).",
-      link: "/services/Bank Confirmation"
+      link: "/services/bank-confirmation"
     }
   ];
 
@@ -50,7 +50,7 @@ function Services() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-blue-900 rounded-lg shadow-md p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-lg">
+            <div key={index} className="bg-gradient-to-tr from-[#0a4661] to-[#235469] rounded-lg shadow-md p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-lg">
               <div>
                 <ion-icon name={service.icon} class="text-5xl text-blue-300 mb-4"></ion-icon>
                 <h2 className="text-2xl font-semibold mb-2 text-white">{service.title}</h2>
@@ -60,7 +60,7 @@ function Services() {
                 to={service.link}
                 className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300 text-center"
               >
-                Learn More
+                Read More
               </Link>
             </div>
           ))}

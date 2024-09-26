@@ -45,7 +45,7 @@ function About() {
                 Empowering Businesses with Accurate and Instant Identity Verification Solutions
               </h2>
             </div>
-            <div className="w-full md:w-1/2 bg-blue-100 border-l-4 border-blue-500 text-black p-4 rounded-lg shadow-md">
+            <div className="w-full md:w-1/2 bg-white-100 border-l-4 border-white-500 text-black p-4 rounded-lg shadow-md">
               <p className="text-lg mb-2">VerifyNow offers seamless and secure identity verification and background check services tailored to your needs. Whether you're onboarding new employees, verifying tenant information, or conducting thorough background checks, VerifyNow ensures accuracy, reliability, and compliance.</p>
 
             </div>

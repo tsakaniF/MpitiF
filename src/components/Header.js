@@ -37,7 +37,8 @@ function Header() {
     '/contact', 
     '/services/background-checks', 
     '/services/identity-verification',
-    '/services/continuous-monitoring'  // Added this line
+    '/services/continuous-monitoring',  // Added this line
+    '/services/bank-confirmation'
   ].includes(location.pathname);
 
   const headerStyle = shouldHaveBackgroundImage
@@ -57,9 +58,9 @@ function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center"> {/* Wrapped in Link component */}
           <img 
-            src={`${process.env.PUBLIC_URL}/images/newlogo-removebg-preview.png`} 
+            src={`${process.env.PUBLIC_URL}/images/logo.png`} 
             alt="VerifyNow Logo" 
-            className="w-20 h-20 mr-3 object-contain"
+            className="w-auto h-7 mr-3 object-contain"
           />
           <span className="text-2xl font-bold"></span>
         </Link>

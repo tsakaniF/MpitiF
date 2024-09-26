@@ -125,49 +125,71 @@ function Home() {
         </div>
       </section>
 
-      <section className="about-us py-16 bg-primary-50">
+      <section className="about-us py-16">
         <div className="container mx-auto px-4">
           <div className="w-full md:w-10/12 mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-black-700 text-center">Empowering Businesses with Accurate and Instant Identity Verification Solutions</h2>
-            <div className="bg-blue-100 p-8 rounded-lg shadow-lg border-l-4 border-blue-500">
-              <p className="text-lg mb-4 text-gray-800">
+            <h2 className="text-3xl font-bold mb-6 text-black-700 text-center rounded-lg shadow-md">Empowering Businesses with Accurate and Instant Identity Verification Solutions</h2>
+            <div className="bg-[#0a4661] p-8 rounded-lg shadow-md">
+              <p className="text-lg mb-4 text-white">
                 VerifyNow offers seamless and secure identity verification and background check services tailored to your needs. Our cutting-edge solutions provide businesses with the confidence they need to make informed decisions quickly and securely.
               </p>
-              <p className="text-lg text-gray-800">
+              <p className="text-lg text-white">
                 Whether you're onboarding new employees, verifying tenant information, or conducting thorough background checks, VerifyNow ensures accuracy, reliability, and compliance with evolving regulatory requirements.
               </p>
             </div>
           </div>
-          <div ref={missionRef} className="flex flex-col md:flex-row-reverse items-center justify-center opacity-0 transition-opacity duration-1000 ease-out">
-            <div className="md:w-5/12 mb-8 md:mb-0">
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-lg mb-4 opacity-70">To provide businesses with the tools they need to verify identities quickly and securely, ensuring trust and reducing fraud across industries.</p>
-            </div>
-            <div className="md:w-4/12 md:pl-8">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/mission.png`}
-                alt="Our Mission"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-          <div ref={visionRef} className="flex flex-col md:flex-row items-center justify-center mt-16 opacity-0 transition-opacity duration-1000 ease-out">
-            <div className="md:w-5/12 mb-8 md:mb-0">
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-lg mb-4 opacity-70">To be the leading provider of verification services, recognized for innovation, reliability, and excellence in customer service.</p>
-            </div>
-            <div className="md:w-4/12 md:pl-8">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/vision.png`}
-                alt="Our Vision"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
+          
         </div>
       </section>
 
-      <section className="features bg-primary-200 py-16">
+
+      <div ref={missionRef} className="flex flex-col md:flex-row-reverse items-center justify-center opacity-0 transition-opacity duration-1000 ease-out mb-16">
+        <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+          <h3 className="text-2xl font-bold mb-4 text-[#0a4661] text-center">VerifyNow Access</h3>
+          <div className="bg-[#0a4661] p-6 rounded-lg shadow-md">
+            <ul className="list-disc list-inside space-y-2 text-white">
+              <li>Access to all major credit bureaus</li>
+              <li>CIPC</li>
+              <li>SARS</li>
+              <li>Department of Home Affairs</li>
+              <li>ID Verifications (Fraud Prevention)</li>
+              <li>Contact Details</li>
+              <li>UN Sanctions and SA PEP (politically exposed person)</li>
+              <li>World Wide Consolidate AML Database (AML - anti-money laundering) check</li>
+              <li>Interpol list</li>
+              <li>Deeds Offices</li>
+            </ul>
+          </div>
+        </div>
+        <div className="md:w-1/2">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/cation.jpg`}
+            alt="Verifynow Access"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+      <div ref={visionRef} className="flex flex-col md:flex-row items-center justify-center opacity-0 transition-opacity duration-1000 ease-out">
+        <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <h3 className="text-2xl font-bold mb-4 text-[#0a4661] text-center">How it Works</h3>
+          <div className="bg-[#0a4661] p-6 rounded-lg shadow-md">
+            <ol className="list-decimal list-inside space-y-2 text-white">
+              <li>Contact and submit your request – Provide the necessary details.</li>
+              <li>We process quickly – Our advanced systems ensure timely and accurate checks.</li>
+              <li>Receive results – Verified information delivered securely.</li>
+            </ol>
+          </div>
+        </div>
+        <div className="md:w-1/2">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ver.jpg`}
+            alt="How it Works"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+
+      <section className="features py-16 bg-gradient-to-tr from-[#0a4661] to-[#235469]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
