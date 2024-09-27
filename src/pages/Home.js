@@ -142,10 +142,27 @@ function Home() {
         </div>
       </section>
 
+      <section className="key-features py-16 bg-white-100 ">
+        <div className="container mx-auto px-4 ">
+          <h2 className="text-3xl font-bold mb-8 text-center text-black">Key Features</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            {[{ icon: "flash-outline", text: "Fast, accurate verification processes" },
+            { icon: "git-branch-outline", text: "Seamless integration with existing systems" },
+            { icon: "cash-outline", text: "Cost-effective and scalable solutions" },
+            { icon: "business-outline", text: "Support across multiple industries" },
+            { icon: "laptop-outline", text: "Easy-to-use platform with real-time results" }].map((feature, index) => (
+              <div key={index} className="flex items-center bg-[#0a4661] p-4 rounded-lg shadow-md">
+                <ion-icon name={feature.icon} class="text-4xl text-white mr-4"></ion-icon>
+                <p className="text-lg text-white">{feature.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <div ref={missionRef} className="flex flex-col md:flex-row-reverse items-center justify-center opacity-0 transition-opacity duration-1000 ease-out mb-16">
+      <div ref={missionRef} className="flex flex-col md:flex-row-reverse items-left justify-left opacity-0 transition-opacity duration-1000 ease-out mb-16">
         <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8">
-          <h3 className="text-2xl font-bold mb-4 text-[#0a4661] text-center">VerifyNow Access</h3>
+          <h3 className="text-2xl font-bold mb-4 text-black text-left">VerifyNow Access</h3>
           <div className="bg-[#0a4661] p-6 rounded-lg shadow-md">
             <ul className="list-disc list-inside space-y-2 text-white">
               <li>Access to all major credit bureaus</li>
@@ -161,31 +178,33 @@ function Home() {
             </ul>
           </div>
         </div>
-        <div className="md:w-1/2">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/cation.jpg`}
-            alt="Verifynow Access"
-            className="w-full h-auto rounded-lg shadow-md"
-          />
+        <div className="md:w-1/2 ">
+          
         </div>
       </div>
-      <div ref={visionRef} className="flex flex-col md:flex-row items-center justify-center opacity-0 transition-opacity duration-1000 ease-out">
-        <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-          <h3 className="text-2xl font-bold mb-4 text-[#0a4661] text-center">How it Works</h3>
-          <div className="bg-[#0a4661] p-6 rounded-lg shadow-md">
-            <ol className="list-decimal list-inside space-y-2 text-white">
-              <li>Contact and submit your request – Provide the necessary details.</li>
-              <li>We process quickly – Our advanced systems ensure timely and accurate checks.</li>
-              <li>Receive results – Verified information delivered securely.</li>
-            </ol>
+
+
+      <div ref={visionRef} className="flex flex-col items-center justify-center opacity-0 transition-opacity duration-1000 ease-out my-16">
+        <h3 className="text-2xl font-bold mb-20 text-blacktext-center">How it Works</h3>
+        <div className="w-full max-w-4xl">
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="flex flex-col md:flex-row justify-between items-center relative">
+              {[
+                { icon: "document-text-outline", title: "Submit Request", description: "Provide necessary details" },
+                { icon: "cog-outline", title: "We Process", description: "Quick and accurate checks" },
+                { icon: "checkmark-circle-outline", title: "Receive Results", description: "Secure delivery of verified info" }
+              ].map((step, index) => (
+                <div key={index} className="flex flex-col items-center text-center mb-8 md:mb-0 w-full md:w-1/3 relative z-10">
+                  <div className="bg-[#0a4661] rounded-full p-6 mb-4 w-24 h-24 flex items-center justify-center shadow-lg">
+                    <ion-icon name={step.icon} class="text-4xl text-white"></ion-icon>
+                  </div>
+                  <h4 className="text-lg font-semibold mb-2">{step.title}</h4>
+                  <p className="text-sm text-black-600">{step.description}</p>
+                </div>
+              ))}
+              <div className="hidden md:block absolute top-1/6  left-0 right-0 h-1 bg-[#0a4661] -mt-12 z-0"></div>
+            </div>
           </div>
-        </div>
-        <div className="md:w-1/2">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/ver.jpg`}
-            alt="How it Works"
-            className="w-full h-auto rounded-lg shadow-md"
-          />
         </div>
       </div>
 
