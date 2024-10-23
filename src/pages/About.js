@@ -8,26 +8,31 @@ function About() {
         <img src="/images/about.jpg" alt="About Us" className="w-full h-full object-cover" />
       </div>
       <div className="content container mx-auto px-4 py-8">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl font-bold mb-6">About Us</h1>
-          <p className="text-lg mb-4">
-            Mpiti's Funeral Home is based in the Winnie-Madikizela Mandela Local Municipality (head office), which is part of the Eastern Cape province of South Africa. This small business initiative prides itself on being an innovative and empowering tool in the region and the province as a whole.
-          </p>
-          <p className="text-lg mb-4">
-            Mpiti's Funeral Home provides its services to the public and private sectors, as well as individuals, at affordable rates. Keeping abreast of changing trends in a highly competitive and volatile industry has enabled our company to strengthen its position as a prominent burial scheme, tent hire, and wedding arrangements business.
-          </p>
-
-          <div className="cta bg-green-600 text-white p-6 rounded-lg mt-8 mb-12">
-            <h3 className="text-2xl font-semibold mb-2">Contact Us Today</h3>
-            <p className="mb-4">For more information about our services, feel free to reach out!</p>
-            <Link to="/contact" className="inline-block bg-white text-green-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300">Get in Touch</Link>
+        <div className="flex flex-col md:flex-row items-start">
+          <div className="md:w-1/2 pr-8">
+            <h1 className="text-4xl font-bold mb-6">About Us</h1>
+            <p className="text-lg mb-4">
+              Mpiti's Funeral Home is based in the Winnie-Madikizela Mandela Local Municipality (head office), which is part of the Eastern Cape province of South Africa. This small business initiative prides itself on being an innovative and empowering tool in the region and the province as a whole.
+            </p>
+            <p className="text-lg mb-4">
+              Mpiti's Funeral Home provides its services to the public and private sectors, as well as individuals, at affordable rates. Keeping abreast of changing trends in a highly competitive and volatile industry has enabled our company to strengthen its position as a prominent burial scheme, tent hire, and wedding arrangements business.
+            </p>
           </div>
+          <div className="md:w-1/2 mt-6 md:mt-0">
+            <img src="/images/about2.jpg" alt="About Mpiti Funeral" className="w-full h-auto rounded-lg shadow-lg" />
+          </div>
+        </div>
+
+        <div className="cta bg-green-600 text-white p-6 rounded-lg mt-12 mb-12">
+          <h3 className="text-2xl font-semibold mb-2">Contact Us Today</h3>
+          <p className="mb-4">For more information about our services, feel free to reach out!</p>
+          <Link to="/contact" className="inline-block bg-white text-green-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300">Get in Touch</Link>
         </div>
       </div>
 
       <div className="team-container bg-white py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">Meet Our Team</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="team-member">
               <img src="/images/person2.jpg" alt="Mrs. B Mpiti" className="w-48 h-48 rounded-full mb-4 object-cover" />
@@ -53,7 +58,7 @@ function About() {
 
       <div className="mission-vision bg-white py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-green-700">Our Mission & Vision</h2>
+          <h2 className="text-3xl font-bold mb-12 text-green-700 text-center">Our Mission & Vision</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="mission bg-gray-100 rounded-lg p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <h3 className="text-2xl font-semibold mb-4 text-green-600">Mission Statement</h3>

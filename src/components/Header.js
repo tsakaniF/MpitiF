@@ -36,12 +36,20 @@ function Header() {
           <Link to="/" className="flex items-center">
             <span className="text-xl font-bold text-white">Mpiti Funeral</span>
           </Link>
-          <nav className="hidden md:flex space-x-16 text-center">
-            <Link to="/" className="text-white hover:text-purple-200">Home</Link>
-            <Link to="/about" className="text-white hover:text-purple-200">About</Link>
-            <Link to="/services" className="text-white hover:text-purple-200">Services</Link>
-            <Link to="/contact" className="text-white hover:text-purple-200">Contact</Link>
-          </nav>
+          <div className="flex items-center">
+            <nav className="hidden md:flex space-x-16 text-center mr-8">
+              <Link to="/" className="text-white hover:text-purple-200">Home</Link>
+              <Link to="/about" className="text-white hover:text-purple-200">About</Link>
+              <Link to="/services" className="text-white hover:text-purple-200">Services</Link>
+              <Link to="/contact" className="text-white hover:text-purple-200">Contact</Link>
+            </nav>
+            <Link 
+              to="/contact" 
+              className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors duration-300"
+            >
+              Get a Quote
+            </Link>
+          </div>
           <button
             className="md:hidden focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

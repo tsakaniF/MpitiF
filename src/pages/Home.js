@@ -13,6 +13,21 @@ function Home() {
     '/images/mpitibgimage3.jpg'
   ];
 
+  const heroContent = [
+    {
+      title: "Welcome to Mpiti Funeral",
+      subtitle: "A business with a personal touch"
+    },
+    {
+      title: "Compassionate Care",
+      subtitle: "Supporting you in difficult times"
+    },
+    {
+      title: "Professional Services",
+      subtitle: "Honoring your loved ones with dignity"
+    }
+  ];
+
   useEffect(() => {
     const animationTimer = setTimeout(() => {
       setAnimateHero(true);
@@ -157,10 +172,10 @@ function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className={`hero-content mt-16 transition-all duration-1000 ease-out ${animateHero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-white">
-              Welcome to Mpiti Funeral
+              {heroContent[currentImageIndex].title}
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl font-light mb-8 text-white">
-              A business with a personal touch
+              {heroContent[currentImageIndex].subtitle}
             </p>
             <Link 
               to="/about"

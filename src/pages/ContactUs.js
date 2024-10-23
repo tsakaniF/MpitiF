@@ -27,19 +27,23 @@ function ContactUs() {
         <div className="contact-info w-full md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-8">
           <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
           <div className="bg-green-600 h-1 w-16 mb-6"></div>
-          <h3 className="text-xl font-semibold mb-4 bg-green-600 text-white py-2 px-4 inline-block">Enquiries</h3>
-          <p className="flex items-center mb-2">
-            <FaPhone className="mr-2 text-green-600" /> 083-488 3908
-          </p>
-          <p className="flex items-center mb-2">
-            <FaEnvelope className="mr-2 text-green-600" /> mpitifunerals@gmail.com
-          </p>
-          <p className="flex items-center mb-2">
-            <FaMapMarkerAlt className="mr-2 text-green-600" /> <strong>Business Hours:</strong>
-          </p>
-          <p className="ml-6 mb-1">07H00 - 19H00 Weekdays</p>
-          <p className="ml-6 mb-1">08H00 - 14H00 Saturdays</p>
-          <p className="ml-6">(Closed on Public Holidays and Sundays)</p>
+          <div className="group">
+            <h3 className="text-xl font-semibold mb-4 bg-green-600 text-white py-2 px-4 inline-block transition-all duration-300 group-hover:bg-green-700">Enquiries</h3>
+            <div className="space-y-2 transition-all duration-300 group-hover:translate-x-2">
+              <p className="flex items-center">
+                <FaPhone className="mr-2 text-green-600" /> 083-488 3908
+              </p>
+              <p className="flex items-center">
+                <FaEnvelope className="mr-2 text-green-600" /> mpitifunerals@gmail.com
+              </p>
+              <p className="flex items-center">
+                <FaMapMarkerAlt className="mr-2 text-green-600" /> <strong>Business Hours:</strong>
+              </p>
+              <p className="ml-6">07H00 - 19H00 Weekdays</p>
+              <p className="ml-6">08H00 - 14H00 Saturdays</p>
+              <p className="ml-6">(Closed on Public Holidays and Sundays)</p>
+            </div>
+          </div>
         </div>
 
         <form className="contact-form w-full md:w-1/2" onSubmit={handleSubmit}>
