@@ -7,9 +7,15 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+<<<<<<< HEAD
             <p className="mb-2 text-gray-400"><strong className="text-white">Phone:</strong> +27 123 456 789</p>
             <p className="mb-2 text-gray-400"><strong className="text-white">Email:</strong> <a href="mailto: info@verifynow.co.za" className="hover:text-blue-400 transition duration-300"> info@funerals.co.za</a></p>
             <p className="mb-2 text-gray-400"><strong className="text-white">Address:</strong> Thornhill Office Park, Vorna Valley , Midrand, Johannesburg, 1685</p>
+=======
+            <p className="mb-2 text-gray-400"><strong className="text-white">Phone:</strong> +27 82 746 7328</p>
+            <p className="mb-2 text-gray-400"><strong className="text-white">Email:</strong> <a href="mailto: info@verifynow.co.za" className="hover:text-blue-400 transition duration-300"> info@verifynow.co.za</a></p>
+            <p className="mb-2 text-gray-400"><strong className="text-white">Address:</strong> Thornhill Office Park, Vorna Valley, Midrand, Johannesburg, 1685</p>
+>>>>>>> 092d6124b5b664ca60acbf7b5dc835ff2b15663b
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>

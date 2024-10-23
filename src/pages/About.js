@@ -2,8 +2,79 @@ import React from 'react';
 
 function About() {
   return (
+<<<<<<< HEAD
     <div>
       {/* About page content will go here */}
+=======
+    <div className="min-h-screen">
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-black inline-block">About Us</h1>
+          <div className="h-1 w-20 bg-orange-500 mx-auto mt-2"></div>
+        </div>
+        <section className="about-us mb-16">
+          <div className="w-full md:w-10/12 mx-auto mb-16 flex flex-col md:flex-row items-start">
+            <div className="w-full md:w-1/2 pr-8">
+              <h2 className="text-3xl font-bold mb-6 text-gray-800 text-left">
+                Empowering Businesses with Accurate and Instant Identity Verification Solutions
+              </h2>
+            </div>
+            <div className="w-full md:w-1/2 bg-white-100 border-l-4 border-white-500 text-black p-4 rounded-lg shadow-md">
+              <p className="text-lg mb-2">VerifyNow offers seamless and secure identity verification and background check services tailored to your needs. Whether you're onboarding new employees, verifying tenant information, or conducting thorough background checks, VerifyNow ensures accuracy, reliability, and compliance.</p>
+
+            </div>
+          </div>
+
+          <section className="why-choose-us mb-16">
+            <h3 className="text-3xl font-bold mb-8 text-center text-gray-800">Why Choose VerifyNow?</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl mb-4 text-center">🔒</div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 text-center">Accuracy</h3>
+                <p className="text-gray-600 text-center">Our verification services are powered by the latest technology and comprehensive databases, ensuring accurate results every time.</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl mb-4 text-center">🚀</div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 text-center">Compliance</h3>
+                <p className="text-gray-600 text-center">VerifyNow adheres to all relevant laws and regulations, providing you with peace of mind and reducing legal risks.</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl mb-4 text-center">🤝</div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 text-center">Flexibility</h3>
+                <p className="text-gray-600 text-center">Whether you need a single check or bulk processing, our services are scalable to meet your specific business requirements.</p>
+              </div>
+            </div>
+          </section>
+
+          <div ref={missionRef} className="flex flex-col md:flex-row-reverse items-center justify-center opacity-0 transition-opacity duration-1000 ease-out mb-16">
+            <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Our Mission</h3>
+              <p className="text-lg mb-4 text-gray-600">To provide businesses with the tools they need to verify identities quickly and securely, ensuring trust and reducing fraud across industries.</p>
+            </div>
+            <div className="md:w-1/2">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/mission.png`}
+                alt="Our Mission"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+          <div ref={visionRef} className="flex flex-col md:flex-row items-center justify-center opacity-0 transition-opacity duration-1000 ease-out">
+            <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Our Vision</h3>
+              <p className="text-lg mb-4 text-gray-600">To be the leading provider of verification services, recognized for innovation, reliability, and excellence in customer service.</p>
+            </div>
+            <div className="md:w-1/2">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/vision.png`}
+                alt="Our Vision"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+>>>>>>> 092d6124b5b664ca60acbf7b5dc835ff2b15663b
     </div>
   );
 }
