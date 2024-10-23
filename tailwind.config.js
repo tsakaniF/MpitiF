@@ -20,6 +20,7 @@ module.exports = {
           800: '#002955',
           900: '#001437',
         },
+        purple: '#800080', // You can adjust this hex code to the exact shade of purple you want
       },
     },
   },

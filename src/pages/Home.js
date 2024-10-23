@@ -252,15 +252,15 @@ function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Our Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex justify-center">
-              <img src="/images/gallery2.jpg" alt="Gallery 2" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            </div>
-            <div className="flex justify-center">
-              <img src="/images/gallery3.jpg" alt="Gallery 3" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            </div>
-            <div className="flex justify-center">
-              <img src="/images/gallery4.jpg" alt="Gallery 4" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            </div>
+            {['gallery2.jpg', 'gallery3.jpg', 'gallery4.jpg'].map((image, index) => (
+              <div key={index} className="flex justify-center overflow-hidden rounded-lg shadow-md">
+                <img 
+                  src={`/images/${image}`} 
+                  alt={`Gallery ${index + 2}`} 
+                  className="w-full h-64 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

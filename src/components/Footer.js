@@ -9,9 +9,10 @@ function Footer() {
         <div className="flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-            <p>123 Funeral Street, Pretoria, South Africa</p>
-            <p>Phone: +27 12 345 6789</p>
-            <p>Email: info@mpitifuneral.co.za</p>
+            <p>160 hope street,</p>
+            <p>Bizana, 4800</p>
+            <p>Phone: 083-488 3908</p>
+            <p>Email: mpitifunerals@gmail.com</p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>

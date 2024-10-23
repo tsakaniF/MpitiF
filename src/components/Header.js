@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,14 +27,16 @@ function Header() {
     };
   }, [lastScrollY]);
 
+  const showGreenLine = ['/', '/about', '/services', '/contact'].includes(location.pathname);
+
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 bg-purple-700 ${isVisible ? 'top-0' : '-top-full'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 bg-purple ${isVisible ? 'top-0' : '-top-full'}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center">
             <span className="text-xl font-bold text-white">Mpiti Funeral</span>
           </Link>
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex space-x-16 text-center">
             <Link to="/" className="text-white hover:text-purple-200">Home</Link>
             <Link to="/about" className="text-white hover:text-purple-200">About</Link>
             <Link to="/services" className="text-white hover:text-purple-200">Services</Link>
@@ -50,7 +53,7 @@ function Header() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-purple-700">
+        <div className="md:hidden bg-purple">
           <div className="container mx-auto px-4 py-2">
             <Link to="/" className="block py-2 text-white hover:text-purple-200" onClick={() => setIsMenuOpen(false)}>Home</Link>
             <Link to="/about" className="block py-2 text-white hover:text-purple-200" onClick={() => setIsMenuOpen(false)}>About</Link>
@@ -59,6 +62,7 @@ function Header() {
           </div>
         </div>
       )}
+      {showGreenLine && <div className="h-1 bg-green-500"></div>}
     </header>
   );
 }
