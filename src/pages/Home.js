@@ -5,39 +5,30 @@ import './Home.css';
 function Home() {
   const [animateHero, setAnimateHero] = useState(false);
   const [expandedPackage, setExpandedPackage] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const backgroundImages = [
+    '/images/mpitibgimage1.jpg',
+    '/images/mpitibgimage2.jpg',
+    '/images/mpitibgimage3.jpg'
+  ];
 
   useEffect(() => {
     const animationTimer = setTimeout(() => {
       setAnimateHero(true);
     }, 100);
 
+    const imageRotationInterval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 10000);
+
     return () => {
       clearTimeout(animationTimer);
+      clearInterval(imageRotationInterval);
     };
   }, []);
 
   const packages = [
-    {
-      name: "Standard Package (B)",
-      price: "R4000",
-      features: [
-        "Collection and Delivery of deceased",
-        "Cleaning and preparation of corpes",
-        "Administration of Death Certificate",
-        "Flat-Lid Coffin",
-        "Storage of deceased",
-        "2 Pole Tent or ( R1000 cash)",
-        "Back deco",
-        "Table",
-        "50 Chairs",
-        "50 Chair Covers",
-        "Burial Service"
-      ],
-      pricing: [
-        "Single Member * Age 18-59  R75\tAbove 60- R95",
-        "Member + Children *Age 18-59 R85\tAbove 60 – R105"
-      ]
-    },
     {
       name: "Standard Package (CA)",
       price: "R2000",
@@ -58,6 +49,27 @@ function Home() {
       pricing: [
         "Single Member * Age 18-59  R85\t* 60-74  R105\t*75 -100  R120",
         "Member + Children *Age 18-59  R95\t*60 – 74  R110\t*75-100  R135"
+      ]
+    },
+    {
+      name: "Standard Package (B)",
+      price: "R4000",
+      features: [
+        "Collection and Delivery of deceased",
+        "Cleaning and preparation of corpes",
+        "Administration of Death Certificate",
+        "Flat-Lid Coffin",
+        "Storage of deceased",
+        "2 Pole Tent or ( R1000 cash)",
+        "Back deco",
+        "Table",
+        "50 Chairs",
+        "50 Chair Covers",
+        "Burial Service"
+      ],
+      pricing: [
+        "Single Member * Age 18-59  R75\tAbove 60- R95",
+        "Member + Children *Age 18-59 R85\tAbove 60 – R105"
       ]
     },
     {
@@ -134,12 +146,14 @@ function Home() {
   return (
     <main className="relative">
       <section
-        className="hero text-center min-h-screen flex items-center relative bg-green-700"
+        className="hero text-center min-h-screen flex items-center relative bg-cover bg-center transition-all duration-1000 ease-in-out"
         style={{
           marginTop: '-80px',
           paddingTop: '80px',
+          backgroundImage: `url("${backgroundImages[currentImageIndex]}")`,
         }}
       >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className={`hero-content mt-16 transition-all duration-1000 ease-out ${animateHero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-white">
@@ -194,7 +208,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="premium-packages bg-gray-100 py-16">
+      <section className="premium-packages py-16 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Premium Packages</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -230,6 +244,43 @@ function Home() {
                 </button>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="gallery py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">Our Gallery</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex justify-center">
+              <img src="/images/gallery2.jpg" alt="Gallery 2" className="w-full h-64 object-cover rounded-lg shadow-md" />
+            </div>
+            <div className="flex justify-center">
+              <img src="/images/gallery3.jpg" alt="Gallery 3" className="w-full h-64 object-cover rounded-lg shadow-md" />
+            </div>
+            <div className="flex justify-center">
+              <img src="/images/gallery4.jpg" alt="Gallery 4" className="w-full h-64 object-cover rounded-lg shadow-md" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="payment-stores py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">Payment Locations</h2>
+          <div className="flex justify-center items-center space-x-4">
+            <div className="flex-shrink-0">
+              <img src="/images/store1.png" alt="Store 1" className="w-24 h-24 object-contain" />
+            </div>
+            <div className="flex-shrink-0">
+              <img src="/images/store2.jpg" alt="Store 2" className="w-24 h-24 object-contain" />
+            </div>
+            <div className="flex-shrink-0">
+              <img src="/images/store3.jpg" alt="Store 3" className="w-24 h-24 object-contain" />
+            </div>
+            <div className="flex-shrink-0">
+              <img src="/images/store4.jpg" alt="Store 4" className="w-24 h-24 object-contain" />
+            </div>
           </div>
         </div>
       </section>
