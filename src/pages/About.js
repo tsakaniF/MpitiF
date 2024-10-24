@@ -33,24 +33,20 @@ function About() {
       <div className="team-container bg-white py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="team-member">
-              <img src="/images/person2.jpg" alt="Mrs. B Mpiti" className="w-48 h-48 rounded-full mb-4 object-cover" />
-              <h3 className="text-xl font-semibold">MRS. B MPITI</h3>
-              <p className="font-medium text-green-600">Director</p>
-              <p className="mt-2">With over 20 years of experience, Mrs. Mpiti leads our team with compassion and dedication.</p>
-            </div>
-            <div className="team-member">
-              <img src="/images/person.jpg" alt="Mr. J Smith" className="w-48 h-48 rounded-full mb-4 object-cover" />
-              <h3 className="text-xl font-semibold">MR. J SMITH</h3>
-              <p className="font-medium text-green-600">Funeral Director</p>
-              <p className="mt-2">Mr. Smith provides guidance and support to families during their time of need.</p>
-            </div>
-            <div className="team-member">
-              <img src="/images/person3.jpg" alt="Ms. L Johnson" className="w-48 h-48 rounded-full mb-4 object-cover" />
-              <h3 className="text-xl font-semibold">MS. L JOHNSON</h3>
-              <p className="font-medium text-green-600">Administrative Assistant</p>
-              <p className="mt-2">Ms. Johnson ensures that all operations run smoothly and efficiently.</p>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
+              <div className="team-member text-center">
+                <img src="/images/person2.jpg" alt="Mrs. B Mpiti" className="w-48 h-48 rounded-full mb-4 object-cover mx-auto" />
+                <h3 className="text-xl font-semibold">MRS. B MPITI</h3>
+                <p className="font-medium text-green-600">Director</p>
+                <p className="mt-2">With over 20 years of experience, Mrs. Mpiti leads our team with compassion and dedication.</p>
+              </div>
+              <div className="team-member text-center">
+                <img src="/images/person.jpg" alt="Mr. J Smith" className="w-48 h-48 rounded-full mb-4 object-cover mx-auto" />
+                <h3 className="text-xl font-semibold">MR. J SMITH</h3>
+                <p className="font-medium text-green-600">Funeral Director</p>
+                <p className="mt-2">Mr. Smith provides guidance and support to families during their time of need.</p>
+              </div>
             </div>
           </div>
         </div>
