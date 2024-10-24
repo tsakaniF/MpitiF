@@ -15,7 +15,7 @@ function ContactUs() {
   };
 
   return (
-    <div className="contact-container bg-gray-100 ">
+    <div className="contact-container bg-gray-100">
       <div className="hero-section relative h-64 overflow-hidden">
         <img src="/images/phone.jpg" alt="Hero" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -23,13 +23,13 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="contact-content container mx-auto px-4 py-12 flex flex-wrap ">
+      <div className="contact-content container mx-auto px-40 py-12 flex flex-wrap">
         <div className="contact-info w-full md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-8">
           <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
           <div className="bg-green-600 h-1 w-16 mb-6"></div>
           <div className="group">
             <h3 className="text-xl font-semibold mb-4 bg-green-600 text-white py-2 px-4 inline-block transition-all duration-300 group-hover:bg-green-700">Enquiries</h3>
-            <div className="space-y-2 transition-all duration-300 group-hover:translate-x-2 ">
+            <div className="space-y-2 transition-all duration-300 group-hover:translate-x-2">
               <p className="flex items-center">
                 <FaPhone className="mr-2 text-green-600" /> 083-488 3908
               </p>
